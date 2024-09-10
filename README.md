@@ -15,9 +15,9 @@ Conhecimento básico de HTML e JavaScript
 ```bash
 git clone https://seu-repositorio.git
 
-2 - **Abra o arquivo HTML:** Abra o arquivo HTML correspondente aos exercícios em seu navegador.
+2 - Abra o arquivo HTML: Abra o arquivo HTML correspondente aos exercícios em seu navegador.
 
-3 - **Interaja com os elementos:** Preencha os campos de entrada e clique nos botões para executar as funções e ver os resultados.
+3 - Interaja com os elementos: Preencha os campos de entrada e clique nos botões para executar as funções e ver os resultados.
 
 Explicação detalhada das funções:
 
