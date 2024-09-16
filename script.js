@@ -135,3 +135,42 @@ function questao8() {
     // Exibição do resultado
     document.getElementById('resultado8').innerText = "Os valores em ordem decrescente são: " + valores.join(", ");
 }
+
+// Questão 9
+function questao9() {
+    // Leitura dos valroes
+    const altura = parseFloat(document.getElementById('dados-01').value);
+    const sexo = document.getElementById('dados-02').value.toLowerCase();
+    var pesoIdeal;
+
+    if (sexo === 'masculino' || sexo === 'm') {
+      pesoIdeal = (72.7 * altura) - 58;
+    } else if (sexo === 'feminino' || sexo === 'f') {
+      pesoIdeal = (62.1 * altura) - 44.7;
+    } else {
+      document.getElementById('resultado9').innerText = 'Sexo inválido. Por favor, insira "masculino" ou "feminino".';
+      return;
+    }
+
+    document.getElementById('resultado9').innerText = 'O peso ideal é: ' + pesoIdeal.toFixed(2) + ' kg';
+  }
+
+  // Questão 10
+  function calcularIMC() {
+    var peso = parseFloat(document.getElementById('peso').value);
+    var altura = parseFloat(document.getElementById('altura').value);
+    var imc = peso / (altura * altura);
+    var condicao;
+
+    if (imc < 18.5) {
+      condicao = 'Abaixo do peso';
+    } else if (imc >= 18.5 && imc < 25) {
+      condicao = 'Peso normal';
+    } else if (imc >= 25 && imc < 30) {
+      condicao = 'Acima do peso';
+    } else {
+      condicao = 'Obeso';
+    }
+
+    document.getElementById('resultadoIMC').innerText = 'Seu IMC é: ' + imc.toFixed(2) + ' - ' + condicao;
+  }

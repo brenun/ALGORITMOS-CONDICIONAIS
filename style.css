@@ -1,0 +1,66 @@
+/* Estilos globais */
+body {
+  font-family: Arial, sans-serif;
+  margin: 10px;
+  padding: 5em;
+}
+
+header {
+  text-align: center;
+}
+
+/* Estilos para as questões */
+.questoes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.questao {
+  width: 30%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+/* Personalize os títulos e parágrafos */
+h2 {
+  color: #333;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+/* Estilos para os inputs e botões */
+input[type="text"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Resultado */
+#resultado,
+#resultado2,
+#resultado3,
+#resultado4,
+#resultado5,
+#resultado6,
+#resultado7,
+#resultado8,
+#resultado9,
+#resultadoIMC {
+  font-weight: bold;
+  color: green;
+}
